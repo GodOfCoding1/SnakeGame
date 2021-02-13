@@ -16,19 +16,30 @@ function checkuseragent() {
 globalThis.mobileCheck = checkuseragent()
 
 function up() {
-    newdirction("up")
+
+    if (direction != "down") {
+        newdirction("up")
+    }
 }
 
 function right() {
-    newdirction("right")
+
+    if (direction != "left") {
+        newdirction("right")
+    }
 }
 
 function down() {
-    newdirction("down")
+
+    if (direction != "up") {
+        newdirction("down")
+    }
 }
 
 function left() {
-    newdirction("left")
+    if (direction != "right") {
+        newdirction("left")
+    }
 }
 
 function showbuttons(classname, action) {
