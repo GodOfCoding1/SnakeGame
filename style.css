@@ -1,0 +1,118 @@
+html * {
+    font-size: 19px;
+}
+
+#submitbutton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    background-color: #008CBA;
+    text-decoration: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.move {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+}
+
+#up {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#down {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#left {
+    margin-left: 10%;
+    float: left;
+}
+
+#right {
+    float: right;
+    margin-right: 10%;
+}
+
+#canvas {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#submitbutton:hover {
+    background-color: #00678a;
+}
+
+.info {
+    background-color: #d1f2fd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.topnav {
+    background-color: #15a1cf;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #00678a;
+    color: #16a1cf;
+}
+
+.topnav a.active {
+    background-color: #005470;
+    color: white;
+}
+
+#re {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 20px;
+    background-color: #008CBA;
+    text-decoration: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#re:hover {
+    background-color: #00678a;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #c3d9e0;
+}

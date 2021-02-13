@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <meta name="keyword" content="snake game, video game, game, games">
+    <meta name="description" content="snake game">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </div>
+    <center>
+        <div id="sizeform">
+            <p id="title" style="color: rgb(255, 255, 255);">SNAKE GAME</p>
+            <p id="output" style="color:rgb(255, 255, 255);"> Chose size:</p>
+            <input style="color: rgb(255, 255, 255);" type="radio" id="11" name="size" value="11">
+            <label style="color: rgb(255, 255, 255);" for="11">11</label><br>
+            <input type="radio" id="17" name="size" value="17">
+            <label style="color: rgb(255, 255, 255);" for="17">17</label><br>
+            <input type="radio" id="21" name="size" value="21">
+            <label style="color: rgb(255, 255, 255);" for="21">21</label><br>
+            <button id="submitbutton" onclick="main();showOrHideE('re','show');globalmake();hidebyclass('info','hide');showbuttons('move', 'show')">PLAY</button>
+        </div>
+
+        <button id="re" onclick="showOrHideE('sizeform','show');showOrHideE('canvas','hide');showOrHideE('re','hide');fixrestrat();hidebyclass('info','show');showbuttons('move', 'hide');">Restart</button>
+        <p id="testing"></p>
+
+    </center>
+
+    <div class="info" id="how">
+        <p style="font-weight: bold; margin-left: 3%;">How to play:</p>
+        <ul style="margin-left: 4%;">
+            <li>Use the arrow keys to controll the snake</li>
+            <li>Eat the apples. Eating one apple grants one point</li>
+        </ul>
+    </div>
+    <div class="info" id="notes">
+        <p style="font-weight: bold; margin-left: 3%;">Notes:</p>
+        <ul style="margin-left: 4%;">
+            <li>MAKE SURE YOU HAVE SELECTED A SIZE BEFORE CLICKING PLAY</li>
+            <li>Will not work on mobile</li>
+            <li>Use fullscreen for best experience</li>
+            <li>Adjust the page so that game is visble</li>
+        </ul>
+    </div>
+    <canvas id="canvas" width="700" height="700"></canvas>
+    <button class="move" id="up" style="display: none;" onclick="up()">UP</button>
+    <button class="move" id="left" style="display: none;" onclick="left()">LEFT</button>
+    <button class="move" id="right" style="display: none;" onclick="right()">RIGHT</button>
+    <button class="move" id="down" style="display: none;" onclick="down()">DOWN</button>
+
+</body>
+<script src="js.js"></script>
+
+</html>
