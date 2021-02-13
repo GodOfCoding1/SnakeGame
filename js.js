@@ -338,7 +338,7 @@ function main() {
     drawapple(board, apple);
 
 
-    globalThis.loop = setInterval(function() { game(sn, apple, board); }, 100);
+    globalThis.loop = setInterval(function() { game(sn, apple, board); }, 160);
     globalThis.running = true;
 }
 
